@@ -10,7 +10,7 @@ export default function Home() {
   const [userInput, setUserInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "Hi there! How can I help?" },
+    { role: "assistant", content: "Hola! Com puc ajudar-te?" },
   ]);
 
   const messageListRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ useEffect(() => {
       ...prevMessages,
       {
         role: "assistant",
-        content: "Oops! There seems to be an error. Please try again.",
+        content: "Ups! Sembla que hi ha hagut un error. Si us plau, torna-ho a intentar",
       },
     ]);
     setLoading(false);
